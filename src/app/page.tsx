@@ -1,6 +1,15 @@
-import Image from "next/image";
+import SectionBrake from "@/components/section_brake";
+import Landing from "../sections/landing";
+
 export default function Home() {
   return (
+    <>
+      <Landing/>
+      <SectionBrake content="palestrantes"/>
+    </>
+  );
+
+    {/*
     <>
       <header className="bg-gradient-to-r from-blue-500 to-orange-600 text-white py-8">
         <div className="container mx-auto flex items-center justify-between">
@@ -38,7 +47,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Seção Patrocinadores */}
         <section id="patrocinadores" className="mb-16 text-center">
           <h2 className="text-3xl font-semibold">Patrocinadores</h2>
           <p className="text-lg">{`
@@ -46,7 +54,6 @@ export default function Home() {
           `}</p>
         </section>
 
-        {/* Seção Apoiadores */}
         <section id="apoiadores" className="mb-16 text-center">
           <h2 className="text-3xl font-semibold">Apoiadores</h2>
           <p className="text-lg">{`
@@ -54,7 +61,6 @@ export default function Home() {
           `}</p>
         </section>
 
-        {/* Seção Palestrantes */}
         <section id="palestrantes" className="mb-16 text-center">
           <h2 className="text-3xl font-semibold">Palestrantes</h2>
           <p className="text-lg">{`
@@ -62,7 +68,6 @@ export default function Home() {
           `}</p>
         </section>
 
-        {/* Seção Workshops */}
         <section id="workshops" className="text-center">
           <h2 className="text-3xl font-semibold">Workshops</h2>
           <p className="text-lg">{`
@@ -71,5 +76,5 @@ export default function Home() {
         </section>
       </main>
     </>
-  );
+    */}
 }
