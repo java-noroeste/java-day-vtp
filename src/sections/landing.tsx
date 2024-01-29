@@ -4,20 +4,25 @@ import { russoOneHeadline } from "../utils/font";
 import { BsCalendar, BsGeoAlt } from "react-icons/bs";
 import CTAList from "../components/cta_list";
 import CTAButton from "../components/cta_button";
+import Link from 'next/link'
 
 const Landing = () => {
   return (
     <header
       className="w-full bg-gradient-to-r from-blue from-70%"
       style={{
-        height: "600px"
-      }}
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        }}
     >
       <img
         className="absolute right-0 -z-10 object-cover"
         style={{
-          width: "550px",
-          height: "600px"
+          width: "60vh",
+          height: "100vh"
         }}
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
         alt="Carlos Fernando Goncalves"
@@ -46,12 +51,21 @@ const Landing = () => {
             <IconInfo
               icon={BsGeoAlt}
               content="IFSP Votuporanga"
+              link={{
+                content: "Ver no mapa",
+                url: "https://maps.app.goo.gl/mXULFkFahikCWpFo9"
+              }}
             />
             <IconInfo
               icon={BsCalendar}
               content="09 Mar. 2024"
+              link={{
+                content: "Adicionar ao calendário",
+                url: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Java%20Day&dates=20240309T120000Z/20240309T210000Z&details=Java%20Day%20-%20Votuporanga%20-%20SP&location=IFSP%20-%20Votuporanga%20-%20SP&sf=true&output=xml"
+              }}
             />
           </div>
+          
         </div>
         <div className="flex flex-col pt-8 space-y-6">
           <CTAList

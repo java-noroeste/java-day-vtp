@@ -6,6 +6,9 @@ export default function Home() {
     <>
       <Landing/>
       <SectionBrake content="palestrantes"/>
+      <SectionBrake content="workshops"/>
+      <SectionBrake content="programação"/>
+      <SectionBrake content="apoiadores"/>
     </>
   );
 
