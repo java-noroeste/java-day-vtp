@@ -4,7 +4,6 @@ import { russoOneHeadline } from "../utils/font";
 import { BsCalendar, BsGeoAlt } from "react-icons/bs";
 import CTAList from "../components/cta_list";
 import CTAButton from "../components/cta_button";
-import Link from 'next/link'
 
 const Landing = () => {
   return (
@@ -19,11 +18,11 @@ const Landing = () => {
         }}
     >
       <img
-        className="absolute right-0 -z-10 object-cover"
-        style={{
-          width: "60vh",
-          height: "100vh"
-        }}
+        className="h-screen absolute right-0 -z-10 object-cover"
+        // style={{
+        //   width: "60vh",
+        //   height: "100vh"
+        // }}
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
         alt="Carlos Fernando Goncalves"
       />
