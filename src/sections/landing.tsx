@@ -21,7 +21,7 @@ const Landing = () => {
       <img
         className="absolute right-0 -z-10 object-cover"
         style={{
-          width: "58vh",
+          width: "60vh",
           height: "100vh"
         }}
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
