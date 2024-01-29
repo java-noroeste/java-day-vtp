@@ -15,13 +15,13 @@ const Landing = () => {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh"
+        height: "100vh",
         }}
     >
       <img
         className="absolute right-0 -z-10 object-cover"
         style={{
-          width: "60vh",
+          width: "58vh",
           height: "100vh"
         }}
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
@@ -65,6 +65,7 @@ const Landing = () => {
               }}
             />
           </div>
+          
         </div>
         <div className="flex flex-col pt-8 space-y-6">
           <CTAList
