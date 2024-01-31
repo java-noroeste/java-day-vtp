@@ -1,18 +1,29 @@
 import SectionBrake from "@/components/section_brake";
 import Landing from "../sections/landing";
+import Talkers from "@/sections/talkers";
+import Workshops from "@/sections/workshops";
+import Partners from "@/sections/partners";
+import Schedule from "@/sections/schedule";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
     <>
-      <Landing/>
-      <SectionBrake content="palestrantes"/>
-      <SectionBrake content="workshops"/>
-      <SectionBrake content="programação"/>
-      <SectionBrake content="apoiadores"/>
+      <Landing />
+      <SectionBrake content="palestrantes" />
+      <Talkers />
+      <SectionBrake content="workshops" />
+      <Workshops />
+      <SectionBrake content="programação" />
+      <Schedule />
+      <SectionBrake content="apoiadores" />
+      <Partners />
+      <Footer />
     </>
   );
 
-    {/*
+  {
+    /*
     <>
       <header className="bg-gradient-to-r from-blue-500 to-orange-600 text-white py-8">
         <div className="container mx-auto flex items-center justify-between">
@@ -79,5 +90,6 @@ export default function Home() {
         </section>
       </main>
     </>
-    */}
+    */
+  }
 }
