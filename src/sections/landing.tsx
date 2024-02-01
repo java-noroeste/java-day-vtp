@@ -13,7 +13,7 @@ const Landing = () => {
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
         alt="Carlos Fernando Goncalves"
       />
-      <div className="w-max h-max m-auto pt-28 flex flex-row space-x-8">
+      <div className="w-max h-max m-auto pb-20 flex flex-row space-x-8">
         <div className="flex flex-col">
           <div
             className="flex flex-col text-orange"

@@ -3,6 +3,7 @@ import { rubikHeadline } from "@/utils/font";
 interface SectionBrakeProps {
   content: string
 }
+
 const SectionBrake = (props: SectionBrakeProps) => {
   return (
     <div
