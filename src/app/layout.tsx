@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Java Day Votuporaga SP",
+  title: "Java Day | Votuporaga-SP",
   description: "Web Site da comunidade JavaNoroeste, edição em Votuporanga",
 };
 

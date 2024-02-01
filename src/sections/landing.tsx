@@ -4,26 +4,12 @@ import { russoOneHeadline } from "../utils/font";
 import { BsCalendar, BsGeoAlt } from "react-icons/bs";
 import CTAList from "../components/cta_list";
 import CTAButton from "../components/cta_button";
-import Link from 'next/link'
 
 const Landing = () => {
   return (
-    <header
-      className="w-full bg-gradient-to-r from-blue from-70%"
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        }}
-    >
+    <header className="h-screen w-full bg-gradient-to-r from-blue from-70% flex">
       <img
-        className="absolute right-0 -z-10 object-cover"
-        style={{
-          width: "60vh",
-          height: "100vh"
-        }}
+        className="h-screen absolute right-0 -z-10 object-cover"
         src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/img/palestrantes/carlos-fernando-goncalves.jpeg"
         alt="Carlos Fernando Goncalves"
       />
@@ -33,7 +19,7 @@ const Landing = () => {
             className="flex flex-col text-orange"
             style={{
               fontSize: "128px",
-              lineHeight: "107%"
+              lineHeight: "107%",
             }}
           >
             <p className={russoOneHeadline.className}>JAVA</p>
@@ -53,7 +39,7 @@ const Landing = () => {
               content="IFSP Votuporanga"
               link={{
                 content: "Ver no mapa",
-                url: "https://maps.app.goo.gl/mXULFkFahikCWpFo9"
+                url: "https://maps.app.goo.gl/mXULFkFahikCWpFo9",
               }}
             />
             <IconInfo
@@ -61,30 +47,29 @@ const Landing = () => {
               content="09 Mar. 2024"
               link={{
                 content: "Adicionar ao calendário",
-                url: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Java%20Day&dates=20240309T120000Z/20240309T210000Z&details=Java%20Day%20-%20Votuporanga%20-%20SP&location=IFSP%20-%20Votuporanga%20-%20SP&sf=true&output=xml"
+                url: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Java%20Day&dates=20240309T120000Z/20240309T210000Z&details=Java%20Day%20-%20Votuporanga%20-%20SP&location=IFSP%20-%20Votuporanga%20-%20SP&sf=true&output=xml",
               }}
             />
           </div>
-          
         </div>
         <div className="flex flex-col pt-8 space-y-6">
           <CTAList
             items={[
               {
                 content: "palestrantes",
-                url: "#palestrantes"
+                url: "#palestrantes",
               },
               {
                 content: "workshops",
-                url: "#workshops"
+                url: "#workshops",
               },
               {
                 content: "programação",
-                url: "#programacao"
+                url: "#programação",
               },
               {
                 content: "patrocínios & apoios",
-                url: "#patrocinios-e-apoios"
+                url: "#apoiadores",
               },
             ]}
             fgColor="white"
@@ -92,8 +77,8 @@ const Landing = () => {
           <CTAButton
             className="text-white"
             link={{
-              content:"MARCAR PRESENÇA",
-              url: "#bgl-do-sympla"
+              content: "MARCAR PRESENÇA",
+              url: "#bgl-do-sympla",
             }}
             styleConfig="white"
           />
@@ -101,6 +86,6 @@ const Landing = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Landing;
