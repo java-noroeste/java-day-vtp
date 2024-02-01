@@ -13,10 +13,7 @@ const Footer = () => {
           />
           <div>
             <p>
-              Desenvolvido por 
-              <a className="text-orange" href="https://javanoroeste.com.br">
-                Java Noroeste
-              </a>
+              Desenvolvido por <a className="text-orange" href="https://javanoroeste.com.br">Java Noroeste</a>
             </p>
           </div>
         </div>
