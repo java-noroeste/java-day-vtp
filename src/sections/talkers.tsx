@@ -1,31 +1,10 @@
 "use client";
 
+import About from "@/components/talkers/about";
 import Showcase from "@/components/talkers/showcase";
 import useWindowSize from "@/effects/window_size";
-import { useState } from "react";
-
-const talkers = [
-  {
-    name: "Josue Teodoro",
-    image: "https://avatars.githubusercontent.com/u/41875891?v=4",
-  },
-  {
-    name: "Joao Augusto",
-    image: "https://avatars.githubusercontent.com/u/91899995?v=4",
-  },
-  {
-    name: "Gustavo Bizo",
-    image: "https://avatars.githubusercontent.com/u/69866294?v=4",
-  },
-  {
-    name: "Ravi Vendramini",
-    image: "https://avatars.githubusercontent.com/u/79207982?v=4",
-  },
-  {
-    name: "Fabricio",
-    image: "https://avatars.githubusercontent.com/u/88052209?v=4",
-  }
-]
+import talkers from "@/mock/talkers";
+import { useEffect, useState } from "react";
 
 const Talkers = () => {
   const windowSize = useWindowSize();
@@ -34,19 +13,19 @@ const Talkers = () => {
     (windowSize.width - focusedTalkerWidth) /
     (talkers.length - 1);
 
-  const [focusedTalkerName, setFocusedTalkerName]= useState(talkers[0].name);
+  const [focusedTalker, setFocusedTalker] = useState(talkers[0]);
 
   return (
-    <section className="w-full text-center text-black">
+    <section className="w-full text-center text-dark">
       <ul className="flex flex-row">
         {talkers.map(({name, image}) => {
-          const isFocused = focusedTalkerName === name;
+          const isFocused = focusedTalker.name === name;
 
           return (
             <Showcase
               focusState={{
                 isFocused,
-                setFocusedTalkerName
+                setFocusedTalker
               }}
               width={isFocused ? focusedTalkerWidth : defaultTalkerWidth}
               name={name}
@@ -55,6 +34,12 @@ const Talkers = () => {
           );
           })}
       </ul>
+      <About
+        name={focusedTalker.name}
+        socials={focusedTalker.socials}
+        about={focusedTalker.about}
+        presentation={focusedTalker.presentation}
+      />
     </section>
   );
 };

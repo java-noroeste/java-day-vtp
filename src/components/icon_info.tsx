@@ -3,28 +3,35 @@ import { firaCodeListing } from "../utils/font";
 import { LinkItem } from "./link";
 
 const styleConfig = {
-  div: "bg-orange text-white",
-  icon: "fill-white",
+  div: {
+    orange: "px-3 py-2 bg-orange text-light",
+    blue: "text-lightblue underline"
+  },
+  icon: {
+    orange: "fill-light",
+    blue: "fill-lightblue"
+  },
 }
 
 interface IconInfoProps {
   icon: IconType
   link: LinkItem
-  content: string
+  styleConfig?: "orange" | "blue"
 }
 
 const IconInfo = (props: IconInfoProps) => {
   return (
     <a
-      className={`px-3 py-2 flex flex-row items-center ${styleConfig.div}`}
+      className={`flex flex-row items-center ${styleConfig.div[props.styleConfig ?? "orange"]}
+                  ${(props.link.url === "") ? "hidden" : ""}`}
       href={props.link.url}
     >
       <props.icon
-        className={`fill-${styleConfig.icon}`}
+        className={`fill-${styleConfig.icon[props.styleConfig ?? "orange"]}`}
         size={20}
         
       />
-      <p className={`ml-2 ${firaCodeListing.className}`}>{props.content}</p>
+      <p className={`ml-2 ${firaCodeListing.className}`}>{props.link.content}</p>
     </a>
   );
 }

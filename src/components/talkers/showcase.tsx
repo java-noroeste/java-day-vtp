@@ -1,9 +1,10 @@
+import talkers, { Talker } from "@/mock/talkers"
 import { rubikCTA } from "@/utils/font"
 import { Dispatch, SetStateAction } from "react"
 
 interface FocusState {
   isFocused: boolean
-  setFocusedTalkerName: Dispatch<SetStateAction<string>>
+  setFocusedTalker: Dispatch<SetStateAction<Talker>>
 }
 
 interface ShowcaseProps {
@@ -14,18 +15,20 @@ interface ShowcaseProps {
 }
 
 const Showcase = (props: ShowcaseProps) => {
-  const {isFocused, setFocusedTalkerName} = props.focusState;
+  const {isFocused, setFocusedTalker} = props.focusState;
 
   return (
     <li
       key={props.name}
-      className={`h-96 flex flex-row items-end overflow-hidden transition-width
-                  ${isFocused ? "" : "cursor-pointer border-2 hover:border-white"}`}
+      className={`h-96 flex flex-row items-end overflow-hidden
+                  ${isFocused ? "" : "cursor-pointer border-2 hover:border-light"}`}
       onClick={evt => {
         if (isFocused)
           return;
 
-        setFocusedTalkerName(props.name);
+        setFocusedTalker(
+          talkers.filter(talker => talker.name === props.name)[0]
+        );
       }}
     >
       <img
@@ -37,7 +40,8 @@ const Showcase = (props: ShowcaseProps) => {
         alt={props.name}
       />
       <p
-        className={`absolute z-20 px-6 pb-4 truncate text-left text-white text-5xl ${rubikCTA.className}`}
+        className={`absolute z-20 px-6 pb-4 truncate text-left text-light text-5xl ${rubikCTA.className}
+                    ${isFocused ? "hidden" : ""}`}
         style={{
           width: `${props.width}px`
         }}

@@ -36,17 +36,15 @@ const Landing = () => {
           <div className="flex flex-row space-x-4">
             <IconInfo
               icon={BsGeoAlt}
-              content="IFSP Votuporanga"
               link={{
-                content: "Ver no mapa",
+                content: "IFSP Votuporanga",
                 url: "https://maps.app.goo.gl/mXULFkFahikCWpFo9",
               }}
             />
             <IconInfo
               icon={BsCalendar}
-              content="09 Mar. 2024"
               link={{
-                content: "Adicionar ao calendário",
+                content: "09 Mar. 2024",
                 url: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Java%20Day&dates=20240309T120000Z/20240309T210000Z&details=Java%20Day%20-%20Votuporanga%20-%20SP&location=IFSP%20-%20Votuporanga%20-%20SP&sf=true&output=xml",
               }}
             />
@@ -75,7 +73,7 @@ const Landing = () => {
             fgColor="white"
           />
           <CTAButton
-            className="text-white"
+            className="text-light"
             link={{
               content: "MARCAR PRESENÇA",
               url: "#bgl-do-sympla",
