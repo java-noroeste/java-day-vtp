@@ -52,8 +52,8 @@ const talkers = [
     Fundador do Java Noroeste - Grupo de Usuários Java do Noroeste Paulista.`,
     presentation: {
       title: "Introdução a Virtual Threads",
-      start: new Date(),
-      end: new Date(),
+      start: new Date(1707004204000),
+      end: new Date(1707004204000),
       description:
         "Java 21 está próximo do seu lançamento com este novo recurso poderoso. Entenda os fundamentos desta novidade.",
       slides_url: "https://google.com",
@@ -87,8 +87,8 @@ const talkers = [
     Fundador do Java Noroeste - Grupo de Usuários Java do Noroeste Paulista.`,
     presentation: {
       title: "Introdução a Virtual Threads",
-      start: new Date(),
-      end: new Date(),
+      start: new Date(1707004204000),
+      end: new Date(1707004204000),
       description:
         "Java 21 está próximo do seu lançamento com este novo recurso poderoso. Entenda os fundamentos desta novidade.",
       slides_url: "https://google.com",
@@ -122,8 +122,8 @@ const talkers = [
     Fundador do Java Noroeste - Grupo de Usuários Java do Noroeste Paulista.`,
     presentation: {
       title: "Introdução a Virtual Threads",
-      start: new Date(),
-      end: new Date(),
+      start: new Date(1707004204000),
+      end: new Date(1707004204000),
       description:
         "Java 21 está próximo do seu lançamento com este novo recurso poderoso. Entenda os fundamentos desta novidade.",
       slides_url: "https://google.com",
@@ -157,8 +157,8 @@ const talkers = [
     Fundador do Java Noroeste - Grupo de Usuários Java do Noroeste Paulista.`,
     presentation: {
       title: "Introdução a Virtual Threads",
-      start: new Date(),
-      end: new Date(),
+      start: new Date(1707004204000),
+      end: new Date(1707004204000),
       description:
         "Java 21 está próximo do seu lançamento com este novo recurso poderoso. Entenda os fundamentos desta novidade.",
       slides_url: "https://google.com",
@@ -192,8 +192,8 @@ const talkers = [
     Fundador do Java Noroeste - Grupo de Usuários Java do Noroeste Paulista.`,
     presentation: {
       title: "Introdução a Virtual Threads",
-      start: new Date(),
-      end: new Date(),
+      start: new Date(1707004204000),
+      end: new Date(1707004204000),
       description:
         "Java 21 está próximo do seu lançamento com este novo recurso poderoso. Entenda os fundamentos desta novidade.",
       slides_url: "https://google.com",
