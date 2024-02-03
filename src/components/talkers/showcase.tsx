@@ -21,7 +21,7 @@ const Showcase = (props: ShowcaseProps) => {
     <li
       key={props.name}
       className={`h-96 flex flex-row items-end overflow-hidden
-                  ${isFocused ? "" : "cursor-pointer border-2 hover:border-light"}`}
+                  ${isFocused ? "xl:hidden" : "cursor-pointer border-2 hover:border-light"}`}
       onClick={evt => {
         if (isFocused)
           return;

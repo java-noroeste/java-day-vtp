@@ -8,10 +8,12 @@ import { useEffect, useState } from "react";
 
 const Talkers = () => {
   const windowSize = useWindowSize();
-  const focusedTalkerWidth = windowSize.width * 0.25;
+  const focusedTalkerWidth = windowSize.width * 0.3;
   const defaultTalkerWidth =
-    (windowSize.width - focusedTalkerWidth) /
-    (talkers.length - 1);
+  (windowSize.width <= 1000)
+    ? (windowSize.width - focusedTalkerWidth) /
+      (talkers.length - 1)
+    : windowSize.width / (talkers.length - 1);
 
   const [focusedTalker, setFocusedTalker] = useState(talkers[0]);
 
@@ -34,12 +36,23 @@ const Talkers = () => {
           );
           })}
       </ul>
-      <About
-        name={focusedTalker.name}
-        socials={focusedTalker.socials}
-        about={focusedTalker.about}
-        presentation={focusedTalker.presentation}
-      />
+      <div className="flex flex-row">
+        <img
+          className="hidden object-cover max-w-2xl border-r border-dark xl:block"
+          style={{
+            width: defaultTalkerWidth,
+            height: "416px"
+          }}
+          src={focusedTalker.image}
+          alt={focusedTalker.name}
+        />
+        <About
+          name={focusedTalker.name}
+          socials={focusedTalker.socials}
+          about={focusedTalker.about}
+          presentation={focusedTalker.presentation}
+        />
+      </div>
     </section>
   );
 };

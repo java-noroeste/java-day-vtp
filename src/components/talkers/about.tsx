@@ -20,7 +20,7 @@ const formatPresentationDate = (presentation: Presentation) => {
 
 const About = (props: AboutProps) => {
   return (
-    <div className="w-full max-w-6xl m-auto flex flex-col lg:border-dark lg:border-x-2 ">
+    <div className="w-full h-full flex flex-col lg:border-dark 2xl:border-r-2 ">
       <div className="h-20 px-6 flex flex-row items-center border-b-2 justify-between border-dark">
         <p
           className={`text-5xl ${rubikCTA.className} text-dark`}
@@ -44,7 +44,7 @@ const About = (props: AboutProps) => {
           })}
         </ul>
       </div>
-      <div className="flex flex-col lg:flex-row">
+      <div className="max-w-6xl flex flex-col lg:flex-row">
         <p
           className={`w-full p-6 border-b border-dark text-left whitespace-pre-line
                       ${rubikParagraph.className}
