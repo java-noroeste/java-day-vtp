@@ -8,10 +8,11 @@ const config: Config = {
   ],
   theme: {  
     colors: {
-      black: "#3d3b40",
-      white: "#efecec",
+      dark: "#3d3b40",
+      light: "#efecec",
       orange: "#fc6736",
-      blue: "#0a3da0"
+      blue: "#0c2d57",
+      lightblue: "#0A3DA0"
     }
   },
   plugins: []

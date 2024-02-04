@@ -3,12 +3,12 @@ import { LinkItem } from "./link";
 
 const styleConfig = {
   anchor: {
-    "white": "border-white text-white hover:bg-white hover:text-black",
-    "black": "border-black text-black hover:bg-black hover:text-white",
+    "white": "border-light text-light hover:bg-light hover:text-dark",
+    "black": "border-dark text-dark hover:bg-dark hover:text-light",
   },
   arrow: {
-    "white": "bg-white text-black",
-    "black": "bg-black text-white"
+    "white": "bg-light text-dark",
+    "black": "bg-dark text-light"
   }
 }
 

@@ -4,8 +4,8 @@ export interface LinkItem {
 }
 
 const styleConfig = {
-  "white": "text-white hover:bg-white hover:text-black",
-  "black": "text-black hover:bg-black hover:text-white"
+  "white": "text-light hover:bg-light hover:text-dark",
+  "black": "text-dark hover:bg-dark hover:text-light"
 }
 
 interface LinkProps {

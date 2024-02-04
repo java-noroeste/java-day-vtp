@@ -25,7 +25,7 @@ export default function Home() {
   {
     /*
     <>
-      <header className="bg-gradient-to-r from-blue-500 to-orange-600 text-white py-8">
+      <header className="bg-gradient-to-r from-blue-500 to-orange-600 text-light py-8">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <Image
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </header>
       
-      <main className="text-black flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="text-dark flex min-h-screen flex-col items-center justify-between p-24">
         <div className="relative flex place-items-center mb-16">
           <Image
             src="https://javanoroeste.com.br/javanoroeste/javaday_riopreto/src/assets/favico.svg"

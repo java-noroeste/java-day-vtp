@@ -2,31 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
-    background-color: #f5f3f3;
-}
-
-.text-black {
-    color: black;
-}
-
-header {
-    color: #f5f3f3;
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+    @apply bg-light text-light;
+    overflow-x: hidden;
 }
