@@ -32,7 +32,7 @@ const Showcase = (props: ShowcaseProps) => {
       }}
     >
       <img
-        className={`h-96 z-10 object-cover ${isFocused ? "brightness-[90%]" : "brightness-[30%]"}`}
+        className={`h-96 z-10 transition-all transform object-cover ${isFocused ? "brightness-[90%]" : "brightness-[30%]"}`}
         style={{
           width: `${props.width}px`
         }}
